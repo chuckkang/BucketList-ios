@@ -43,8 +43,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="PKD-vw-NdS" kind="presentation" identifier="EditItem" id="GXr-Y8-Ty4"/>
-                        <segue destination="PKD-vw-NdS" kind="presentation" id="DFu-gm-f1p"/>
+                        <segue destination="PKD-vw-NdS" kind="presentation" identifier="EditItem" id="DFu-gm-f1p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4qe-Wd-EN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,6 +150,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GXr-Y8-Ty4"/>
+        <segue reference="DFu-gm-f1p"/>
     </inferredMetricsTieBreakers>
 </document>

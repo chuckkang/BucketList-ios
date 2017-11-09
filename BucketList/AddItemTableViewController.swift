@@ -26,8 +26,14 @@ class AddItemTableViewController: UITableViewController {
         delegate?.cancelButtonPressed(by: self)
     }
     @IBAction func savedButtonPressed(_ sender: UIBarButtonItem) {
-        let text = itemTextField.text!
-        delegate?.itemSaved(by: self, with: text, at: indexPath!)
+        let text = String(describing: itemTextField.text!)
+        if let ip = indexPath {
+            delegate?.itemSaved(by: self, with: text, at: ip)
+        } else {
+            delegate?.itemSaved(by: self, with: text, at: nil)
+        }
+        
+        //print(String(describing: itemTextField.text), "RTWERTWERTWERT")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

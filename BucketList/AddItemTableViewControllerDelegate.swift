@@ -9,6 +9,6 @@
 import Foundation
 
 protocol AddItemTableViewControllerDelegate: class {
-    func itemSaved(by controller: AddItemTableViewController, with returnedtext: String, at indexPath: NSIndexPath?)
+    func itemSaved(by controller: AddItemTableViewController, with returnedtext: String?, at indexPath: NSIndexPath?)
     func cancelButtonPressed(by controller: AddItemTableViewController)
 }
